@@ -1,0 +1,192 @@
+.first-page-wrap{
+  width: 100vw;
+  height: 91vh;
+  .first-page-header{
+    background-image: url("../../../layouts/image/bg-banner.png");
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 32.46vh;
+    position: relative;
+    >img{
+      position: absolute;
+      width: 4.4vw;
+      height: 4vw;
+      top: 6vw;
+    }
+    >div{
+      margin-top: 2.5vh;
+      width: 100vw;
+      padding: 0 3vw;
+      >p{
+        float: left;
+        color: white;
+        width: 47vw;
+        padding: 1vw 0;
+        >span{
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+        }
+      }
+      >p:first-child{
+        border-right: 1px solid rgba(255,255,255,.3)!important;
+      }
+    }
+    >p{
+      height: 18.55vh;
+      padding-top: 6.18vh;
+      text-align: center;
+      color: white;
+      span{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+      }
+      >span:first-child{
+        font-size: 8vw;
+        font-weight: bold;
+      }
+    }
+    img:first-child{
+      left: 3vw;
+    }
+    img:nth-child(2){
+      right: 3vw;
+    }
+  }
+  .first-page-container{
+    float: left;
+    width: 100vw;
+    padding: 0 3vw;
+    height: 58.54vh;
+    .first-page-notice{
+      float: left;
+      margin: 0;
+      height: 4vh;
+      line-height: 4vh;
+      overflow-y: hidden;
+      width: 94vw;
+      position: relative;
+      p{
+        position: absolute;
+        left: 0;
+        top: 0;
+        span{
+          display: inline-block;
+          width: 94vw;
+          padding-left: 5vw;
+          height: 4vh;
+          line-height: 4vh;
+          position: relative;
+        }
+        span:before{
+          content: "";
+          display: inline-block;
+          width: 4vw;
+          height: 4vw;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          background-image: url("../../../layouts/image/notice.png");
+          background-size: 100% 100%;
+        }
+      }
+    }
+    .first-page-content{
+      width: 94vw;
+      height: 54.68vh;
+      overflow-y: auto;
+      .title{
+        width: 94vw;
+        height: 4vh;
+        line-height: 4vh;
+        margin: 0;
+        position: relative;
+        span{
+          display: inline-block;
+          height: 5vw;
+          line-height: 5vw;
+          font-size: 4vw;
+          padding-left: 10px;
+        }
+        span:before{
+          content: "";
+          display: inline-block;
+          width: 2px;
+          height: 5vw;
+          background-color: #2b96ff;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+      ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li{
+          height:6.635vh;
+          //line-height: 9.27vh;
+          position: relative;
+          margin-bottom: 2.635vh;
+          padding-left: 6.4vw;
+          img{
+            width: 6.4vw;
+            height: 6.4vw;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+          .new-price{
+            display: inline-block;
+            width: 20.8vw;
+            margin: 0;
+            height: 6.635vh;
+            text-align: center;
+            color: #54b282;
+            span{
+              display: inline-block;
+              width: 100%;
+              text-align: center;
+              float: left;
+              line-height: 3.5vh;
+            }
+            span:first-child{
+              font-size: 3.5vw;
+            }
+            span:last-child{
+              line-height: 2vh;
+              font-size: 2.5vw;
+            }
+          }
+          .up{
+            color: #f12222;
+          }
+          .name-and-desc{
+            display: inline-block;
+            width: 45.86vw;
+            margin: 0;
+            height: 6.635vh;
+            padding-left: 2.67vw;
+            span{
+              float: left;
+              line-height: 3.5vh;
+            }
+            span:first-child{
+              font-size: 3.5vw;
+              color: black;
+            }
+            span:last-child{
+              line-height: 2vh;
+              font-size: 2.5vw;
+              color: #666;
+            }
+          }
+        }
+      }
+    }
+  }
+}

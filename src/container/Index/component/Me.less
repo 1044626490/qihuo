@@ -1,0 +1,115 @@
+.my-info-wrap{
+  width: 100vw;
+  //height: 100vh;
+  .my-info-header{
+    width: 100vw;
+    height: 6.9vh;
+    background-color: #2e8bff;
+    p{
+      height: 6.9vh;
+      line-height: 6.9vh;
+      font-size: 5vw;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+  }
+  .my-info-avatar{
+    height: 10.82vh;
+    width: 100vw;
+    padding-left: 18.3vw;
+    position: relative;
+    border-bottom: 1px solid rgba(102,102,102,.1);
+    img{
+      width: 13.3vw;
+      height: 13.3vw;
+      position: absolute;
+      left: 5vw;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    p{
+      position: absolute;
+      left: 18.3vw;
+      top: 50%;
+      transform: translateY(-50%);
+      padding-left: 3vw;
+      >span{
+        display: inline-block;
+        width: 100%;
+        font-size: 3vw;
+      }
+      >span:first-child{
+        color: black;
+        font-size: 3.5vw;
+      }
+    }
+  }
+  .my-money{
+    width: 100vw;
+    padding: 1.5vw 10vw 3vh;
+    height: 12.36vh;
+    p{
+      display: inline-block;
+      width: 50%;
+      span{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        color: #666;
+        font-size: 3vw;
+      }
+      >span:first-child{
+        font-size: 5vw;
+        color: #1c1c1c;
+        margin: 1.5vh 0 0;
+      }
+    }
+  }
+  ul{
+    list-style: none;
+    padding: 0 0 0 5vw;
+    margin: 0;
+    height: 60vh;
+    overflow-y: auto;
+    li{
+      height: 12vw;
+      padding-left: 7vw;
+      position: relative;
+      >img{
+        width: 5vw;
+        height: 5vw;
+        position: absolute;
+        left: 0;
+        top: 53%;
+        transform: translateY(-50%);
+      }
+      >p{
+        color: #1c1c1c;
+        height: 12vw;
+        line-height: 12vw;
+        font-size: 3.5vw;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        >span{
+          content: none;
+          display: inline-block;
+          width: 2.25vw;
+          height: 4vw;
+          background-image: url("../../../layouts/image/more.png");
+          background-size: 100% 100%;
+          position: absolute;
+          right: 4vw;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+    li:last-child{
+      p{
+        border: none;
+      }
+    }
+  }
+}

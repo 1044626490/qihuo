@@ -1,0 +1,47 @@
+#qihuo-wrap{
+  .qihuo-index-tab{
+    >.ant-tabs-bar{
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      padding: 0 5vw;
+      margin: 0;
+      z-index: 9999;
+      background-color: white;
+      .ant-tabs-nav{
+        width: 90vw;
+        .ant-tabs-tab-active{
+          color: #2b96ff!important;
+        }
+        .ant-tabs-tab{
+          width: 30vw;
+          margin: 0;
+          color: #ddd;
+          padding: 1vw 2vw;
+          >span{
+            text-align: center;
+            display: inline-block;
+            width: 8vw;
+            height: 12vw;
+            img{
+              margin-left: 0.8vw;
+              display: block;
+              width: 6.4vw;
+              height: 6.4vw;
+            }
+          }
+        }
+        .ant-tabs-tab:nth-child(2){
+          text-align: center;
+        }
+        .ant-tabs-tab:last-child{
+          text-align: right;
+        }
+        .ant-tabs-ink-bar{
+          display: none!important;
+        }
+      }
+    }
+  }
+}
