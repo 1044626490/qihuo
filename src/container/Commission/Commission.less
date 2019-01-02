@@ -1,129 +1,19 @@
-.ant-select-dropdown-menu{
-  li{
-    height: 7vw!important;
-    line-height: 7vw!important;
-    padding: 0 3vw;
-  }
-  line-height: 6.4vw;
-}
-.order-drawer{
-  height: 100vh;
-  z-index: 9999;
-  .ant-drawer-content-wrapper{
-    margin-top: 6.9vh;
-    width: 66.7vw!important;
-    .ant-drawer-header{
-      border-bottom-color: #eee;
-      padding: 0;
-      height: 14vw;
-      line-height: 14vw;
-      .ant-drawer-title{
-        color: #666;
-        font-weight: bold;
-        font-size: 4.5vw;
-        height: 14vw;
-        line-height: 14vw;
-        text-align: center;
-        letter-spacing: 3px;
-      }
-    }
-    .ant-drawer-body{
-      padding: 3vw;
-      >div{
-        font-size: 3vw;
-        margin-bottom: 4vw;
-        >div:first-child{
-          display: inline-block;
-          width: 20%;
-          text-align: right;
-          float: left;
-          height: 6.4vw;
-          line-height: 6.4vw;
-        }
-        >div:nth-child(2){
-          display: inline-block;
-          width: 80%;
-          .ant-select{
-            font-size: 3vw;
-            color: #999;
-            width: 27vw!important;
-            height: 7vw!important;
-            line-height: 7vw!important;
-            .ant-select-selection{
-              border: 1px solid #ccc!important;
-              width: 27vw!important;
-              height: 7vw!important;
-              line-height: 7vw!important;
-              .ant-select-selection__rendered{
-                width: 27vw!important;
-                height: 7vw!important;
-                line-height: 7vw!important;
-                padding-left: 3vw;
-                margin: 0;
-              }
-            }
-          }
-        }
-        .radio{
-          padding-right: 2vw;
-          span{
-            text-align: center;
-            display: inline-block;
-            width: 20vw;
-            height: 6.4vw;
-            line-height: 6.4vw;
-            color: #999;
-            border: 1px solid #ccc;
-            cursor: pointer;
-          }
-          span:nth-child(1),span:nth-child(2){
-            margin-bottom: 4vw;
-          }
-          span:nth-child(even){
-            margin-left: 3vw;
-            //float: right;
-          }
-          span.active{
-            border: none;
-            background-image: url("../../../layouts/image/bor.png");
-            background-size: 100% 100%;
-            color: #2f89ff;
-          }
-        }
-      }
-      >div:last-child{
-        >div:nth-child(2){
-          button{
-            font-size: 3vw;
-            width: 27vw!important;
-            height: 7vw;
-            padding: 0;
-            line-height: 7vw;
-            background-color: #2b96ff;
-            color: white;
-            border-radius: 1vw;
-            border: none!important;
-          }
-        }
-      }
-    }
-  }
-}
-.my-order-wrap{
+.commission-wrap{
   width: 100vw;
-  background-color: #f5f5f5;
-  .anticon-arrow-down{
-    font-size: 4vw!important;
-    color: #51b67d;
-  }
-  .anticon-arrow-up{
-    font-size: 4vw!important;
-    color: #ee221e;
-  }
-  .my-order-header{
+  height: 100vh;
+  .my-info-header{
     width: 100vw;
     height: 6.9vh;
     background-color: #2e8bff;
+    position: relative;
+    .anticon-left{
+      position: absolute;
+      top: 50%;
+      left: 2vw;
+      transform: translateY(-50%);
+      font-size: 4vw;
+      color: white;
+    }
     p{
       height: 6.9vh;
       line-height: 6.9vh;
@@ -137,7 +27,7 @@
   .my-order-content{
     .ant-tabs-content{
       .ant-tabs-tabpane{
-        //padding: 0 2.67vw;
+        padding: 0 2.67vw;
       }
       .order-info-header{
         height: 4.64vh;
@@ -185,7 +75,7 @@
             color: #666;
             font-size: 3vw!important;
             text-align: center;
-            height: 10vw;
+            height: 12vw;
             position: relative;
             span{
               display: inline-block;
@@ -199,11 +89,11 @@
             }
           }
           td:first-child,td:nth-child(3){
-            width: 18.6vw;
+            width: 18vw;
             background-color: #edf4ff;
           }
           td:nth-child(2),td:nth-child(4){
-            width: 28.73vw;
+            width: 28vw;
           }
         }
         tr:last-child{
@@ -279,13 +169,14 @@
       position: static;
     }
     .ant-tabs-bar{
-      padding: 0 0 0 27vw;
+      padding: 0 0 0 21vw;
       margin: 0;
       border: none;
       position: relative;
       .ant-tabs-tab{
         text-align: center;
-        width: 10vw;
+        //padding: 0;
+        //width: 17vw;
         font-size: 4vw;
         padding: 2vw 0;
         margin: 0;
@@ -304,7 +195,7 @@
         background-color: #2e8bff;
       }
       .ant-tabs-tab:first-child{
-        margin-right: 26vw;
+        margin-right: 21vw;
       }
     }
   }

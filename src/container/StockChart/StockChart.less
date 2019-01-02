@@ -1,0 +1,79 @@
+#stock-chart-wrap{
+  .my-info-header{
+    width: 100vw;
+    height: 6.9vh;
+    background-color: #2e8bff;
+    position: relative;
+    .anticon-left{
+      position: absolute;
+      top: 50%;
+      left: 2vw;
+      transform: translateY(-50%);
+      font-size: 4vw;
+      color: white;
+    }
+    p{
+      height: 6.9vh;
+      line-height: 6.9vh;
+      font-size: 5vw;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+  }
+  .my-order-content{
+    .ant-tabs-content{
+      .ant-tabs-tabpane{
+        padding: 0 2.67vw;
+      }
+      .order-info-header{
+        height: 4.64vh;
+        position: relative;
+        padding-left: 5vw;
+        margin-top: 1vh;
+        >img,>p,>span{
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        >img{
+          left: 0;
+          height: 4vw;
+          width: 4vw;
+        }
+        p{
+          margin: 0;
+          left: 5vw;
+          font-size: 3.7vw;
+          color: #1c1c1c;
+        }
+        span{
+          font-size: 3.5vw;
+          color: #666;
+          right: 0;
+        }
+      }
+    }
+    .ant-tabs-bar{
+      padding: 0 0 0 18vw;
+      margin: 0;
+      border: none;
+      .ant-tabs-tab{
+        text-align: center;
+        width: 10vw;
+        font-size: 4vw;
+        padding: 2vw 0;
+        margin: 0;
+        color: #1c1c1c!important;
+      }
+      .ant-tabs-ink-bar{
+        background-color: #2e8bff;
+        //display: inline-block!important;
+      }
+      .ant-tabs-tab:first-child,.ant-tabs-tab:nth-child(2){
+        margin-right: 18vw;
+      }
+    }
+  }
+}

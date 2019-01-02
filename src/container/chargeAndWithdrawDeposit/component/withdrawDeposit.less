@@ -1,0 +1,166 @@
+.withdraw-deposit-wrap{
+  .my-info-header{
+    width: 100vw;
+    height: 6.9vh;
+    background-color: #2e8bff;
+    position: relative;
+    .anticon-left{
+      position: absolute;
+      top: 50%;
+      left: 2vw;
+      transform: translateY(-50%);
+      font-size: 4vw;
+      color: white;
+    }
+    p{
+      height: 6.9vh;
+      line-height: 6.9vh;
+      font-size: 5vw;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+  }
+  .bank-card-wrap{
+    >p:last-child{
+      font-size: 2.5vw;
+      padding-left: 2.67vw;
+      height: 6vw;
+      line-height: 6vw;
+      span{
+        color: red;
+      }
+    }
+    .title{
+      font-size: 3.5vw;
+      color: #1c1c1c;
+    }
+    >.title{
+      height: 15vw;
+      line-height: 15vw;
+      padding-left: 2.67vw;
+      margin: 0;
+      span{
+        padding-left: 2vw;
+        border-left: 3px solid #2f89ff;
+      }
+    }
+    .ant-form{
+      .check-button{
+        width: 94.66vw;
+        margin-left: 2.67vw;
+        height: 8vw;
+        line-height: 8vw;
+        padding: 0;
+        background-color: #2f89ff;
+        color: white;
+        border: none;
+        text-align: center;
+      }
+      .button-disabled{
+        opacity: 0.6;
+      }
+      .ant-form-item{
+        margin-bottom: 3vw!important;
+        .ant-form-item-children{
+          >div{
+            position: relative;
+            >span{
+              padding-left: 2.67vw;
+              display: inline-block;
+              width: 20vw;
+            }
+            input,.ant-input-number{
+              border: none;
+              width: 70vw;
+              .ant-input-number-handler-wrap{
+                display: none;
+              }
+            }
+            .get-kaptchald{
+              color: #2f89ff;
+              position: absolute;
+              white-space: nowrap;
+              right: 5vw;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+        }
+      }
+      .ant-form-item:last-child{
+        margin-bottom: 0!important;
+      }
+      .ant-form-item:nth-child(8){
+        .title{
+          height: 15vw;
+          line-height: 15vw;
+          padding-left: 2.67vw;
+          margin: 0;
+          position: absolute;
+          left: 0;
+          bottom: -15vw;
+          width: 94.66vw;
+          span{
+            padding-left: 2vw;
+            border-left: 3px solid #2f89ff;
+          }
+        }
+        margin-bottom: 15vw!important;
+      }
+      .ant-form-item:first-child,.ant-form-item:nth-child(2),.ant-form-item:nth-child(3){
+        .order-select,.ant-select-selection__rendered,.ant-select-selection{
+          height: 8vw!important;
+          line-height: 7vw!important;
+          border: none;
+          font-size: 4vw!important;
+          .ant-select-arrow{
+            right: 2vw;
+          }
+          .anticon-down{
+            background-image: url("../../../layouts/image/down.png");
+            background-size: 100% 100%;
+            transform: translateY(80%);
+            width: 2.5vw;
+            height: 1.25vw;
+            svg{
+              display: none;
+            }
+          }
+        }
+        .order-select{
+          //display: inline-block!important;
+          display: inline-block;
+        }
+        .ant-select-selection{
+          display: inline-block;
+          min-width: 20vw;
+          max-width: 40vw;
+        }
+        .ant-select-selection__rendered{
+          padding: 0 3vw;
+          margin: 0;
+          .ant-select-selection-selected-value{
+            padding-right: 3vw;
+          }
+        }
+        .ant-select-selection{
+          border: none;
+          //border: 1px solid #eee;
+          //border-radius: 3vw;
+        }
+        p{
+          display: inline-block;
+          width: 50vw;
+          float: right;
+          height: 10vw;
+          margin: 0;
+          line-height: 10vw;
+          font-size: 3vw;
+          text-align: right;
+        }
+      }
+    }
+  }
+}

@@ -20,6 +20,83 @@ const routes = [
             changeTabs:(value)=>{this.setState({activityKey:value})}
         },
         isExact: true
+    },{
+        path: "StockChart",
+        component: Loadable({
+            loader: () => import("~/container/StockChart/StockChart"),
+            loading: MyLoadingComponent,
+        }),
+        isExact: false
+    },{
+        path: "Login",
+        component: Loadable({
+            loader: () => import("~/container/Login/Login"),
+            loading: MyLoadingComponent,
+        }),
+        isExact: false
+    },{
+        path: "incomeAndExpenses",
+        component: Loadable({
+            loader: () => import("~/container/incomeAndExpenses/incomeAndExpenses"),
+            loading: MyLoadingComponent,
+        }),
+        isExact: false
+    },{
+        path: "Commission",
+        component: Loadable({
+            loader: () => import("~/container/Commission/Commission"),
+            loading: MyLoadingComponent,
+        }),
+        isExact: false
+    },{
+        path: "DownloadApp",
+        component: Loadable({
+            loader: () => import("~/container/DownloadApp/DownloadApp"),
+            loading: MyLoadingComponent,
+        }),
+        isExact: false
+    },{
+        path: "TiedCard",
+        component: Loadable({
+            loader: () => import("~/container/TiedCard/TiedCard"),
+            loading: MyLoadingComponent,
+        }),
+        isExact: false
+    },{
+        path: "chargeAndWithdrawDeposit/:id",
+        component: Loadable({
+            loader: () => import("~/container/chargeAndWithdrawDeposit/chargeAndWithdrawDeposit"),
+            loading: MyLoadingComponent,
+        }),
+        isExact: false
+    },{
+        path: "withdrawDeposit/:money",
+        component: Loadable({
+            loader: () => import("~/container/chargeAndWithdrawDeposit/component/withdrawDeposit"),
+            loading: MyLoadingComponent,
+        }),
+        isExact: false
+    },{
+        path: "RePasswordIndex",
+        component: Loadable({
+            loader: () => import("~/container/rePassword/rePassword"),
+            loading: MyLoadingComponent,
+        }),
+        isExact: false
+    },{
+        path: "ReDealPasswordIndex",
+        component: Loadable({
+            loader: () => import("~/container/reDealPassword/rePassword"),
+            loading: MyLoadingComponent,
+        }),
+        isExact: false
+    },{
+        path: "Feedback",
+        component: Loadable({
+            loader: () => import("~/container/Feedback/Feedback"),
+            loading: MyLoadingComponent,
+        }),
+        isExact: false
     }
 ];
 
@@ -28,7 +105,7 @@ class Dashboard extends React.Component {
         super(props);
         this.state = {
             count: 90,
-            activityKey:"2"
+            activityKey:"1"
             // isLogin:false,
         };
     }

@@ -8,6 +8,7 @@ class FirstPage extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
+            isLogin:true,
             news:[
                 {
                     time: "2018-08-10 12:55:31",
@@ -85,17 +86,23 @@ class FirstPage extends React.Component{
                     <img src={require("../../../layouts/image/login.png")} alt=""/>
                     <img src={require("../../../layouts/image/msg.png")} alt=""/>
                     <p>
-                        <span>8,888.88</span>
-                        <span>资产总额（元）</span>
+                        {
+                            this.state.isLogin?<span>8,888.88</span>:<span><Button>登陆/注册</Button></span>
+                        }
+                        <span>资产总额&nbsp;&nbsp;(元)</span>
                     </p>
                     <div>
                         <p>
-                            <span>52.22</span>
-                            <span>昨日收益（元）</span>
+                            {
+                                this.state.isLogin?<span className="no-login-money">52.22</span>:<span className="no-login-money">--</span>
+                            }
+                            <span>昨日收益&nbsp;&nbsp;(元)</span>
                         </p>
                         <p>
-                            <span>52.22</span>
-                            <span>累计收益（元）</span>
+                            {
+                                this.state.isLogin?<span className="no-login-money">52.22</span>:<span className="no-login-money">--</span>
+                            }
+                            <span>累计收益&nbsp;&nbsp;(元)</span>
                         </p>
                     </div>
                 </div>
@@ -168,7 +175,7 @@ class FirstPage extends React.Component{
 }
 
 const mapStateToProps = state => {
-    const {userInfo} = state;
-    return {userInfo};
+    const {} = state;
+    return {};
 };
 export default connect(mapStateToProps)(FirstPage);

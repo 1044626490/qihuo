@@ -1,0 +1,181 @@
+.feedback-wrap{
+  .ant-upload-select-picture-card i {
+    font-size: 32px;
+    color: #999;
+  }
+  .ant-upload-select-picture-card{
+    border: 1px solid #ccc!important;
+    border-radius: 2vw!important;
+    width: 29.5vw!important;
+    height: 29.5vw!important;
+    margin: 0 0 2.5vw 0;
+    //height: 20vw!important;
+    //width: 20vw!important;
+    .ant-upload-text{
+      display: none;
+    }
+    .anticon-plus{
+      font-weight: 500;
+      color: #2f89ff;
+      font-size: 12vw;
+      //svg{
+      //  display: none;
+      //}
+    }
+  }
+  .ant-upload-select-picture-card .ant-upload-text {
+    margin-top: 8px;
+    color: #666;
+  }
+  .ant-upload-list-picture-card{
+    float: end;
+    >div{
+      border-radius: 2vw;
+      float: left;
+      width: 29.5vw;
+      height: 29.5vw;
+      margin: 0 2.5vw 2.5vw 0;
+      img{
+        border-radius: 2vw;
+      }
+    }
+    >div:nth-child(3),>div:nth-child(6),>div:nth-child(9){
+      margin-right: 0;
+    }
+  }
+  .my-info-header{
+    width: 100vw;
+    height: 6.9vh;
+    background-color: #2e8bff;
+    position: relative;
+    .anticon-left{
+      position: absolute;
+      top: 50%;
+      left: 2vw;
+      transform: translateY(-50%);
+      font-size: 4vw;
+      color: white;
+    }
+    p{
+      height: 6.9vh;
+      line-height: 6.9vh;
+      font-size: 5vw;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+  }
+  .feedback-content{
+    width: 94.66vw;
+    margin: 1.5vw auto 0;
+    text-align: center;
+    .feedback-type{
+      .ant-radio-group-solid{
+        width: 94.66vw;
+        .ant-radio-button-wrapper-checked{
+          font-size: 3.5vw;
+          background-color: #63a8ff!important;
+          color: white!important;
+        }
+        .ant-radio-button-wrapper{
+          border-color: transparent!important;
+          border-radius: 1vw;
+          font-size: 3.5vw;
+          padding: 0;
+          width: 24vw;
+          height: 8vw;
+          margin-right: 2.5vw;
+          text-align: center;
+          background-color: #ddd;
+          color: #666;
+          position: relative;
+          >span:not(.ant-radio-button){
+            display: inline-block!important;
+            height: 8vw;
+            width: 24vw;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            line-height: 8vw;
+          }
+        }
+        .ant-radio-button-wrapper:before{
+          display: none;
+        }
+        .ant-radio-button-wrapper:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+    .feedback-description {
+      position: relative;
+      .ant-input {
+        font-size: 3vw;
+        margin-top: 1vw;
+        border: none;
+      }
+      .ant-input:focus {
+        border-color: #2f89ff;
+        outline: 0;
+        -webkit-box-shadow: 0 0 0 2px rgba(47, 137, 255, 0.2);
+        box-shadow: 0 0 0 2px rgba(47, 137, 255, 0.2);
+        border-right-width: 1px !important;
+      }
+      >span{
+        color: #cdcdcd;
+        font-size: 3vw;
+        position: absolute;
+        bottom: 0;
+        right: 3vw;
+      }
+    }
+    .feedback-pic,.feedback-description,.feedback-type,.feedback-tel{
+      margin-bottom: 1.5vw;
+      text-align: left;
+      >p{
+        span{
+          color: red;
+          font-size: 5vw;
+          float: left;
+          margin-right: 1vw;
+          //line-height: 7vw;
+        }
+        font-size: 4vw;
+        color: #1c1c1c;
+        margin-bottom: 1vw;
+      }
+    }
+    .feedback-tel{
+      .ant-input{
+        border: none;
+      }
+      .ant-input:focus {
+        border-color: #2f89ff;
+        outline: 0;
+        -webkit-box-shadow: 0 0 0 2px rgba(47, 137, 255, 0.2);
+        box-shadow: 0 0 0 2px rgba(47, 137, 255, 0.2);
+        border-right-width: 1px !important;
+      }
+    }
+    >button{
+      span{
+        font-size: 4vw;
+      }
+      border: none;
+      width: 30vw!important;
+      height: 9vw!important;
+      padding: 0!important;
+      border-radius: 4.5vw!important;
+      background-color: #2f89ff!important;
+      color: white!important;
+    }
+    >button:hover{
+
+    }
+    .disabled-button{
+      background-color: #63a8ff!important;
+    }
+  }
+}

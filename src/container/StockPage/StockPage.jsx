@@ -68,7 +68,7 @@ class StockPage extends React.Component{
             date = today+34200000-8460000;
             date1 = today+54000000-84600000;
         }
-        let data = []
+        let data = [];
         if(week === 0||week === 6){
             for (let i = -4800; i <= 0; i += 1) {
                 data.push({
@@ -189,7 +189,7 @@ class StockPage extends React.Component{
                             labels: {
                             enabled: false
                         }
-                    }
+                    };
                     params.tooltip = {
                         formatter: function (){
                             let value = this.y;
